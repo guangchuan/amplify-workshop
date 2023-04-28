@@ -12,7 +12,22 @@ type Message
   content: String!
 }
 
-type Todo @model {
+# // type Todo @model {
+# //   id: ID!
+# //   name: String!
+# //   description: String
+# // }
+
+type Todo
+  @model (
+    mutations: {create: "createTodo"}
+    subscriptions:  {onCreate: "onCreateTodo"}
+  )
+  @auth(rules: [
+    {allow: owner, operations:[read, create, delete]}
+    {allow: private,  operations:[read]}
+  ])
+{
   id: ID!
   name: String!
   description: String
