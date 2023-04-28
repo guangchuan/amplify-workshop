@@ -12,3 +12,8 @@ type Message
   content: String!
 }
 
+type Todo @model {
+  id: ID!
+  name: String!
+  description: String
+}

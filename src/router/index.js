@@ -3,6 +3,7 @@ import Home from '@/components/Home.vue';
 import Chat from '@/components/Chat.vue';
 import AI from '@/components/AI.vue';
 import Geo from '@/components/Geo.vue';
+import Todo from '@/components/Todo.vue';
 
 const routes = [
   {
@@ -15,6 +16,12 @@ const routes = [
     path: '/chat',
     name: 'chat',
     component: Chat,
+    props: true,
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: Todo,
     props: true,
   },
   {
