@@ -1,3 +1,7 @@
+
+# Amplify Vue Workshop
+https://catalog.workshops.aws/amplify-vue3/ja-JP
+
 # vite-project
 
 This template should help get you started developing with Vue 3 in Vite.
