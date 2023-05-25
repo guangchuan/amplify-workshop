@@ -1,5 +1,5 @@
 <template>
-  <authenticator>
+  <!-- authenticator -->
     <!-- 追加 1 -->
     <template v-slot="{ user, signOut }">
       <main>
@@ -24,7 +24,7 @@
       </main>
     <!-- 追加 4 -->
     </template>
-  </authenticator>
+  <!-- /authenticator -->
 </template>
 
 <style>
